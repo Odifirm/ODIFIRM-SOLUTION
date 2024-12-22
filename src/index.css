@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+  }
+}
+
+@layer components {
+  .bg-home {
+    background-color: #2d3438;
+    /* background-image: url("./assets/coomingsoon.jpg"); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .text {
+    color: #b7b4bc;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #574474;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all;
+  transition-delay: 10s;
+  transition-timing-function: ease-in-out;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #574474;
+}
